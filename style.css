@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:content-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 2rem;
+}
+
+.roadmap {
+    display:ruby-base-container;
+    gap: 1.5rem;
+}
+
+.semester {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.semester-header {
+    background: #3498db;
+    color: white;
+    padding: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.semester-header:hover {
+    background: #2980b9;
+}
+
+.semester-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.semester-content.active {
+    max-height: 1000px;
+    padding: 1rem;
+}
+
+.course {
+    padding: 0.75rem;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+}
+
+.course:last-child {
+    border-bottom: none;
+}
+
+.course-name {
+    flex: 1;
+}
+
+.credits {
+    color: #666;
+    margin-left: 1rem;
+}
+
+.total-credits {
+    font-weight: bold;
+    color: #2c3e50;
+    text-align: right;
+    padding: 0.5rem 1rem;
+    background: #f8f9fa;
+}
